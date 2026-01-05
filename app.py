@@ -929,7 +929,7 @@ def render_results_table(results, data_service):
                 'Exterior': aquis_ext_display,
                 'INDOP': nbs.get('indop', '-'),
                 'Local IBS': local_incid,
-                'Cód.': class_display,
+                'cClassTrib': class_display,
                 'Classificação': class_nome
             })
     
@@ -1018,8 +1018,8 @@ def render_results_table(results, data_service):
                         "Local IBS",
                         width="medium",
                     ),
-                    "Cód.": st.column_config.TextColumn(
-                        "Cód.",
+                    "cClassTrib": st.column_config.TextColumn(
+                        "cClassTrib",
                         width="small",
                     ),
                     "Classificação": st.column_config.TextColumn(
