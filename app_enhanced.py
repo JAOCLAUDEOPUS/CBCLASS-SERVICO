@@ -131,22 +131,56 @@ def configure_page():
         /* ============================================
            CAMPO DE BUSCA ESTILIZADO
            ============================================ */
-        .stTextInput > div > div > input {
+        .stTextInput input,
+        .stTextInput > div > div > input,
+        [data-testid="stTextInput"] input {
             background: rgba(255,255,255,0.1) !important;
+            background-color: rgba(255,255,255,0.1) !important;
             border: 2px solid rgba(201, 169, 97, 0.3) !important;
             border-radius: 50px !important;
             padding: 15px 25px !important;
-            color: #fff !important;
+            color: #ffffff !important;
             font-size: 16px !important;
+            caret-color: #c9a961 !important;
         }
 
-        .stTextInput > div > div > input:focus {
+        .stTextInput input:focus,
+        .stTextInput > div > div > input:focus,
+        [data-testid="stTextInput"] input:focus {
             border-color: #c9a961 !important;
             box-shadow: 0 0 20px rgba(201, 169, 97, 0.3) !important;
+            color: #ffffff !important;
         }
 
-        .stTextInput > div > div > input::placeholder {
+        .stTextInput input::placeholder,
+        .stTextInput > div > div > input::placeholder,
+        [data-testid="stTextInput"] input::placeholder {
             color: #8892a0 !important;
+        }
+
+        /* Selectbox estilizado */
+        .stSelectbox > div > div,
+        [data-testid="stSelectbox"] > div > div {
+            background: rgba(255,255,255,0.1) !important;
+            border: 1px solid rgba(201, 169, 97, 0.3) !important;
+            border-radius: 8px !important;
+            color: #ffffff !important;
+        }
+
+        .stSelectbox [data-baseweb="select"] > div,
+        [data-testid="stSelectbox"] [data-baseweb="select"] > div {
+            background: rgba(255,255,255,0.1) !important;
+            color: #ffffff !important;
+        }
+
+        .stSelectbox [data-baseweb="select"] span,
+        [data-testid="stSelectbox"] [data-baseweb="select"] span {
+            color: #ffffff !important;
+        }
+
+        /* Checkbox estilizado */
+        .stCheckbox label span {
+            color: #e6edf3 !important;
         }
 
         /* ============================================
