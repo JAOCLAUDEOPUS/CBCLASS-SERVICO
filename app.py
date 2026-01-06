@@ -1015,6 +1015,7 @@ def render_results_table(results, data_service, search_service, search_term=None
                 'Desc. NBS': desc_nbs_text,
                 'Onerosa': prest_onerosa_display,
                 'Exterior': aquis_ext_display,
+                'cClassTrib': class_display,
                 'Tipo Trib.': tipo_trib,
                 'Local IBS': local_incid,
             })
@@ -1037,6 +1038,7 @@ def render_results_table(results, data_service, search_service, search_term=None
                     "Desc. NBS": st.column_config.TextColumn("Desc. NBS", width="medium"),
                     "Onerosa": st.column_config.TextColumn("Onerosa", width="small"),
                     "Exterior": st.column_config.TextColumn("Exterior", width="small"),
+                    "cClassTrib": st.column_config.TextColumn("cClassTrib", width="small"),
                     "Tipo Trib.": st.column_config.TextColumn("Tipo Trib.", width="medium"),
                     "Local IBS": st.column_config.TextColumn("Local IBS", width="medium"),
                 },
